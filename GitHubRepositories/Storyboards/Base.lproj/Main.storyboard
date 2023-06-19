@@ -1,24 +1,351 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VCv-TJ-VZq">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="chE-G6-f1N">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VCv-TJ-VZq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ft3-L1-MaO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9MJ-5T-sAA" kind="relationship" relationship="rootViewController" id="wlR-W8-QNG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BxI-Bc-eVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="332" y="351"/>
+        </scene>
+        <!--Repositores List-->
+        <scene sceneID="JPl-cH-u0D">
+            <objects>
+                <viewController id="9MJ-5T-sAA" customClass="RepositoryListViewController" customModule="GitHubRepositories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nha-l8-jWV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QYV-w9-Y6K">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepositoryTableViewCell" rowHeight="160" id="l6m-K6-0uW" customClass="RepositoryTableViewCell" customModule="GitHubRepositories" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l6m-K6-0uW" id="VAk-sy-zkb">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="FtE-eO-hFY">
+                                                    <rect key="frame" x="15" y="15" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="c8W-hr-RLs"/>
+                                                        <constraint firstAttribute="height" constant="40" id="gNn-gs-kct"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIp-RD-ZvD">
+                                                    <rect key="frame" x="63" y="15" width="47.666666666666657" height="40"/>
+                                                    <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital illustration " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srk-NC-A2S">
+                                                    <rect key="frame" x="15" y="70" width="159" height="22.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sarrah Morry" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbG-WP-DIN">
+                                                    <rect key="frame" x="15" y="102.33333333333333" width="84" height="16.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="15"/>
+                                                    <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Whf-ph-TO4">
+                                                    <rect key="frame" x="15.000000000000004" y="129" width="50.333333333333343" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bwC-6a-vDX">
+                                                            <rect key="frame" x="0.0" y="-0.33333333333333215" width="20" height="19.666666666666664"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="Xhb-K8-Ui4"/>
+                                                                <constraint firstAttribute="width" constant="20" id="a62-dD-lby"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moO-Et-TM4">
+                                                            <rect key="frame" x="25" y="0.0" width="25.333333333333329" height="20"/>
+                                                            <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="suH-kR-VNx">
+                                                    <rect key="frame" x="0.0" y="159" width="393" height="1"/>
+                                                    <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="lyl-tb-wVV"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="srk-NC-A2S" firstAttribute="top" secondItem="FtE-eO-hFY" secondAttribute="bottom" constant="15" id="3ng-7u-ghC"/>
+                                                <constraint firstItem="FtE-eO-hFY" firstAttribute="top" secondItem="VAk-sy-zkb" secondAttribute="top" constant="15" id="93Y-ww-Jzf"/>
+                                                <constraint firstItem="rIp-RD-ZvD" firstAttribute="top" secondItem="VAk-sy-zkb" secondAttribute="top" constant="15" id="96b-hS-e6b"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="srk-NC-A2S" secondAttribute="trailing" constant="15" id="AY5-ks-WCd"/>
+                                                <constraint firstItem="jbG-WP-DIN" firstAttribute="leading" secondItem="VAk-sy-zkb" secondAttribute="leading" constant="15" id="G12-Do-nDG"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jbG-WP-DIN" secondAttribute="trailing" constant="15" id="Jlt-3C-xXo"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Whf-ph-TO4" secondAttribute="bottom" constant="10" id="NhQ-nJ-PDx"/>
+                                                <constraint firstItem="suH-kR-VNx" firstAttribute="leading" secondItem="VAk-sy-zkb" secondAttribute="leading" id="PDP-XX-6GZ"/>
+                                                <constraint firstItem="Whf-ph-TO4" firstAttribute="leading" secondItem="VAk-sy-zkb" secondAttribute="leading" constant="15" id="UG9-u8-LWo"/>
+                                                <constraint firstItem="srk-NC-A2S" firstAttribute="leading" secondItem="VAk-sy-zkb" secondAttribute="leading" constant="15" id="XhJ-rj-j4A"/>
+                                                <constraint firstItem="FtE-eO-hFY" firstAttribute="leading" secondItem="VAk-sy-zkb" secondAttribute="leading" constant="15" id="YET-QZ-gna"/>
+                                                <constraint firstItem="rIp-RD-ZvD" firstAttribute="leading" secondItem="FtE-eO-hFY" secondAttribute="trailing" constant="8" symbolic="YES" id="bB7-jH-u33"/>
+                                                <constraint firstAttribute="trailing" secondItem="suH-kR-VNx" secondAttribute="trailing" id="cod-Eo-AEJ"/>
+                                                <constraint firstItem="jbG-WP-DIN" firstAttribute="top" secondItem="srk-NC-A2S" secondAttribute="bottom" constant="10" id="gRh-YX-kAA"/>
+                                                <constraint firstItem="rIp-RD-ZvD" firstAttribute="centerY" secondItem="FtE-eO-hFY" secondAttribute="centerY" id="gpj-IO-YSd"/>
+                                                <constraint firstAttribute="bottom" secondItem="suH-kR-VNx" secondAttribute="bottom" id="hTb-dY-tMb"/>
+                                                <constraint firstItem="Whf-ph-TO4" firstAttribute="top" secondItem="jbG-WP-DIN" secondAttribute="bottom" constant="10" id="t6E-tn-RHi"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rIp-RD-ZvD" secondAttribute="trailing" constant="20" symbolic="YES" id="uPb-dy-4un"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="jbG-WP-DIN" id="Lkd-Hq-UPe"/>
+                                            <outlet property="nameLabel" destination="srk-NC-A2S" id="zE4-x9-u2i"/>
+                                            <outlet property="ownerAvatarImageView" destination="FtE-eO-hFY" id="mbo-fY-eCT"/>
+                                            <outlet property="ownerNameLabel" destination="rIp-RD-ZvD" id="VZ1-jL-bEk"/>
+                                            <outlet property="starsCountLabel" destination="moO-Et-TM4" id="Xtp-xI-dUM"/>
+                                            <outlet property="starsImageView" destination="bwC-6a-vDX" id="0Fl-b6-qgi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9MJ-5T-sAA" id="VrC-ds-WdF"/>
+                                    <outlet property="delegate" destination="9MJ-5T-sAA" id="ts7-hQ-PJe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v4M-oO-RuZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v4M-oO-RuZ" firstAttribute="trailing" secondItem="QYV-w9-Y6K" secondAttribute="trailing" id="Ora-gu-vdP"/>
+                            <constraint firstItem="QYV-w9-Y6K" firstAttribute="top" secondItem="Nha-l8-jWV" secondAttribute="top" id="ceD-hP-P9d"/>
+                            <constraint firstAttribute="bottom" secondItem="QYV-w9-Y6K" secondAttribute="bottom" id="hPp-V3-Ir7"/>
+                            <constraint firstItem="QYV-w9-Y6K" firstAttribute="leading" secondItem="v4M-oO-RuZ" secondAttribute="leading" id="ueO-8f-Cx3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Repositores List" id="5PL-VP-saN"/>
+                    <connections>
+                        <outlet property="tableView" destination="QYV-w9-Y6K" id="din-MU-HLP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAm-Np-Afb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="351"/>
+        </scene>
+        <!--Repositores List-->
+        <scene sceneID="wl4-tk-uz8">
+            <objects>
+                <viewController storyboardIdentifier="RepositoryDetailViewController" id="RTk-Jy-Txi" customClass="RepositoryDetailViewController" customModule="GitHubRepositories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k14-zx-CkJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pHI-h7-0Tc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepositoryTableViewCell" rowHeight="200" id="ZBQ-vd-DdD" customClass="RepositoryDetailTableViewCell" customModule="GitHubRepositories" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZBQ-vd-DdD" id="UAY-qI-uGW">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Adl-tA-OFe">
+                                                    <rect key="frame" x="15" y="15" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="4vu-Wm-S1E"/>
+                                                        <constraint firstAttribute="width" constant="40" id="NR4-CP-0zD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnD-IW-Hs9">
+                                                    <rect key="frame" x="63" y="14.999999999999998" width="47.666666666666657" height="22.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 Feb, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zc-y9-qPg">
+                                                    <rect key="frame" x="63.000000000000007" y="38.333333333333336" width="70.666666666666686" height="13.333333333333336"/>
+                                                    <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital illustration " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWH-e8-krF">
+                                                    <rect key="frame" x="15" y="70" width="159" height="22.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sarrah Morry" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWg-2h-G0o">
+                                                    <rect key="frame" x="15" y="102.33333333333333" width="84" height="16.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="15"/>
+                                                    <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Y3p-nv-bUl">
+                                                    <rect key="frame" x="15.000000000000004" y="129" width="50.333333333333343" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FUQ-Hy-yqf">
+                                                            <rect key="frame" x="0.0" y="-0.33333333333333215" width="20" height="19.666666666666664"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="CCV-s4-Xto"/>
+                                                                <constraint firstAttribute="width" constant="20" id="izc-yl-59U"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-pU-IMe">
+                                                            <rect key="frame" x="25" y="0.0" width="25.333333333333329" height="20"/>
+                                                            <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                            <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O2J-Hk-NOS">
+                                                    <rect key="frame" x="78" y="129" width="50.333333333333343" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork_icon" translatesAutoresizingMaskIntoConstraints="NO" id="GX9-ip-Bfh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="LLG-ol-0AG"/>
+                                                                <constraint firstAttribute="height" constant="20" id="eZw-ds-aHE"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyd-Ce-2tZ">
+                                                            <rect key="frame" x="25" y="0.0" width="25.333333333333329" height="20"/>
+                                                            <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                            <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Link to repo" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="itc-2W-gKk">
+                                                    <rect key="frame" x="15" y="153" width="373" height="37"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="p7N-2K-hFc"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="url"/>
+                                                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                                </textView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lbg-1d-oZ5">
+                                                    <rect key="frame" x="142" y="129" width="50.333333333333343" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IEu-Ka-0k4">
+                                                            <rect key="frame" x="0.0" y="0.99999999999999822" width="20" height="18.666666666666664"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="HbE-uY-Rrk"/>
+                                                                <constraint firstAttribute="width" constant="20" id="QSf-id-bwB"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xA-3y-oUu">
+                                                            <rect key="frame" x="25" y="0.0" width="25.333333333333329" height="20"/>
+                                                            <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                            <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="itc-2W-gKk" secondAttribute="trailing" constant="5" id="2yW-aK-v6G"/>
+                                                <constraint firstItem="itc-2W-gKk" firstAttribute="leading" secondItem="UAY-qI-uGW" secondAttribute="leading" constant="15" id="6GQ-WB-E0f"/>
+                                                <constraint firstItem="GnD-IW-Hs9" firstAttribute="leading" secondItem="Adl-tA-OFe" secondAttribute="trailing" constant="8" symbolic="YES" id="9jN-Ie-G0Q"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RWH-e8-krF" secondAttribute="trailing" constant="15" id="BH3-Qw-iXw"/>
+                                                <constraint firstItem="Adl-tA-OFe" firstAttribute="top" secondItem="UAY-qI-uGW" secondAttribute="top" constant="15" id="DFL-gY-100"/>
+                                                <constraint firstItem="gWg-2h-G0o" firstAttribute="top" secondItem="RWH-e8-krF" secondAttribute="bottom" constant="10" id="EdL-WO-LXv"/>
+                                                <constraint firstItem="Y3p-nv-bUl" firstAttribute="leading" secondItem="UAY-qI-uGW" secondAttribute="leading" constant="15" id="GEo-l3-ndW"/>
+                                                <constraint firstItem="lbg-1d-oZ5" firstAttribute="centerY" secondItem="O2J-Hk-NOS" secondAttribute="centerY" id="IGg-Ey-BRe"/>
+                                                <constraint firstItem="GnD-IW-Hs9" firstAttribute="top" secondItem="UAY-qI-uGW" secondAttribute="top" constant="15" id="OHF-RG-mkO"/>
+                                                <constraint firstItem="lbg-1d-oZ5" firstAttribute="leading" secondItem="O2J-Hk-NOS" secondAttribute="trailing" constant="13.67" id="OuD-9b-aj2"/>
+                                                <constraint firstItem="4Zc-y9-qPg" firstAttribute="leading" secondItem="Adl-tA-OFe" secondAttribute="trailing" constant="8" symbolic="YES" id="Pcq-Rm-Hld"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y3p-nv-bUl" secondAttribute="bottom" constant="0.67000000000000004" id="SIa-v0-qZj"/>
+                                                <constraint firstItem="RWH-e8-krF" firstAttribute="leading" secondItem="UAY-qI-uGW" secondAttribute="leading" constant="15" id="SLz-Pe-LOV"/>
+                                                <constraint firstItem="Adl-tA-OFe" firstAttribute="leading" secondItem="UAY-qI-uGW" secondAttribute="leading" constant="15" id="ZWd-LA-d27"/>
+                                                <constraint firstItem="RWH-e8-krF" firstAttribute="top" secondItem="Adl-tA-OFe" secondAttribute="bottom" constant="15" id="auR-Qv-hKi"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GnD-IW-Hs9" secondAttribute="trailing" constant="20" symbolic="YES" id="bcD-jP-Drt"/>
+                                                <constraint firstItem="Y3p-nv-bUl" firstAttribute="top" secondItem="gWg-2h-G0o" secondAttribute="bottom" constant="10" id="dqv-JO-sOS"/>
+                                                <constraint firstAttribute="bottom" secondItem="itc-2W-gKk" secondAttribute="bottom" constant="10" id="fkU-Jw-BDp"/>
+                                                <constraint firstItem="itc-2W-gKk" firstAttribute="top" secondItem="O2J-Hk-NOS" secondAttribute="bottom" constant="4" id="l3U-yk-AmY"/>
+                                                <constraint firstItem="O2J-Hk-NOS" firstAttribute="top" secondItem="gWg-2h-G0o" secondAttribute="bottom" constant="10" id="muq-jC-JWS"/>
+                                                <constraint firstItem="4Zc-y9-qPg" firstAttribute="top" secondItem="GnD-IW-Hs9" secondAttribute="bottom" constant="1" id="oZG-KZ-UDO"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gWg-2h-G0o" secondAttribute="trailing" constant="15" id="u5o-uC-nWF"/>
+                                                <constraint firstItem="gWg-2h-G0o" firstAttribute="leading" secondItem="UAY-qI-uGW" secondAttribute="leading" constant="15" id="x6k-Lf-TXU"/>
+                                                <constraint firstItem="O2J-Hk-NOS" firstAttribute="leading" secondItem="Y3p-nv-bUl" secondAttribute="trailing" constant="12.666666666666657" id="zTi-9t-I76"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="createdAtLabel" destination="4Zc-y9-qPg" id="uxl-xD-jVV"/>
+                                            <outlet property="descriptionLabel" destination="gWg-2h-G0o" id="03X-O4-OYU"/>
+                                            <outlet property="forksCountLabel" destination="gyd-Ce-2tZ" id="Anz-vy-P51"/>
+                                            <outlet property="forksImageView" destination="GX9-ip-Bfh" id="C9b-Ra-VHi"/>
+                                            <outlet property="languageImageView" destination="IEu-Ka-0k4" id="186-9K-XxW"/>
+                                            <outlet property="languageLabel" destination="7xA-3y-oUu" id="nXE-4M-vhp"/>
+                                            <outlet property="nameLabel" destination="RWH-e8-krF" id="wp2-Bb-Qsj"/>
+                                            <outlet property="ownerAvatarImageView" destination="Adl-tA-OFe" id="Sdc-RB-MfE"/>
+                                            <outlet property="ownerNameLabel" destination="GnD-IW-Hs9" id="Tg9-ze-0Gs"/>
+                                            <outlet property="repoLinkTextView" destination="itc-2W-gKk" id="DGq-ef-HtU"/>
+                                            <outlet property="starsCountLabel" destination="GAR-pU-IMe" id="eAQ-Gb-VVv"/>
+                                            <outlet property="starsImageView" destination="FUQ-Hy-yqf" id="btw-Hu-qVL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C3p-J4-dxa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pHI-h7-0Tc" firstAttribute="leading" secondItem="C3p-J4-dxa" secondAttribute="leading" id="Fn9-ne-0AI"/>
+                            <constraint firstItem="C3p-J4-dxa" firstAttribute="trailing" secondItem="pHI-h7-0Tc" secondAttribute="trailing" id="Iwa-JP-aqJ"/>
+                            <constraint firstAttribute="bottom" secondItem="pHI-h7-0Tc" secondAttribute="bottom" id="Pk7-vD-qAW"/>
+                            <constraint firstItem="pHI-h7-0Tc" firstAttribute="top" secondItem="C3p-J4-dxa" secondAttribute="top" id="j6Q-CB-sCl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Repositores List" id="d0k-WT-3uw"/>
+                    <connections>
+                        <outlet property="tableView" destination="pHI-h7-0Tc" id="jkT-Kf-knb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2x-IY-7qg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948.854961832061" y="350.7042253521127"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <image name="fork_icon" width="100" height="100"/>
+        <image name="no_avatar" width="4000" height="4000"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
