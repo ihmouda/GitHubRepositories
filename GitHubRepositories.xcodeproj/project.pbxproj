@@ -28,6 +28,15 @@
 		1F9158D12A4107D80025631A /* TableViewCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9158CD2A4107D80025631A /* TableViewCellRepresentable.swift */; };
 		1F9158D22A4107D80025631A /* GeneralResourceTableViewCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9158CE2A4107D80025631A /* GeneralResourceTableViewCellRepresentable.swift */; };
 		1F9158D42A4108080025631A /* GeneralResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9158D32A4108080025631A /* GeneralResource.swift */; };
+		1F9159162A410CF20025631A /* RemoteGitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91590A2A410CF20025631A /* RemoteGitHubRepository.swift */; };
+		1F9159172A410CF20025631A /* GitHubRepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91590B2A410CF20025631A /* GitHubRepositoryManager.swift */; };
+		1F9159182A410CF20025631A /* GitHubRepositoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91590C2A410CF20025631A /* GitHubRepositoryRouter.swift */; };
+		1F9159192A410CF20025631A /* UserDefaultsGitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91590D2A410CF20025631A /* UserDefaultsGitHubRepository.swift */; };
+		1F91591A2A410CF20025631A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91590F2A410CF20025631A /* Repository.swift */; };
+		1F91591B2A410CF20025631A /* NetworkingManager+Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9159112A410CF20025631A /* NetworkingManager+Reachability.swift */; };
+		1F91591C2A410CF20025631A /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9159122A410CF20025631A /* NetworkingManager.swift */; };
+		1F91591D2A410CF20025631A /* NetworkingManager+ModelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9159132A410CF20025631A /* NetworkingManager+ModelResult.swift */; };
+		1F91591E2A410CF20025631A /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9159152A410CF20025631A /* ConfigurationManager.swift */; };
 		345A3D6FBC67EE46355EE019 /* Pods_GitHubRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5537E7D9DCBE8D6BFB4B425A /* Pods_GitHubRepositories.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +64,15 @@
 		1F9158CD2A4107D80025631A /* TableViewCellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellRepresentable.swift; sourceTree = "<group>"; };
 		1F9158CE2A4107D80025631A /* GeneralResourceTableViewCellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralResourceTableViewCellRepresentable.swift; sourceTree = "<group>"; };
 		1F9158D32A4108080025631A /* GeneralResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralResource.swift; sourceTree = "<group>"; };
+		1F91590A2A410CF20025631A /* RemoteGitHubRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteGitHubRepository.swift; sourceTree = "<group>"; };
+		1F91590B2A410CF20025631A /* GitHubRepositoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubRepositoryManager.swift; sourceTree = "<group>"; };
+		1F91590C2A410CF20025631A /* GitHubRepositoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubRepositoryRouter.swift; sourceTree = "<group>"; };
+		1F91590D2A410CF20025631A /* UserDefaultsGitHubRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsGitHubRepository.swift; sourceTree = "<group>"; };
+		1F91590F2A410CF20025631A /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1F9159112A410CF20025631A /* NetworkingManager+Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkingManager+Reachability.swift"; sourceTree = "<group>"; };
+		1F9159122A410CF20025631A /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		1F9159132A410CF20025631A /* NetworkingManager+ModelResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkingManager+ModelResult.swift"; sourceTree = "<group>"; };
+		1F9159152A410CF20025631A /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 		36AF5925BE214C2A0E9E1A71 /* Pods-GitHubRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubRepositories.release.xcconfig"; path = "Target Support Files/Pods-GitHubRepositories/Pods-GitHubRepositories.release.xcconfig"; sourceTree = "<group>"; };
 		5537E7D9DCBE8D6BFB4B425A /* Pods_GitHubRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE9489460AC2EBA5B517785 /* Pods-GitHubRepositories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubRepositories.debug.xcconfig"; path = "Target Support Files/Pods-GitHubRepositories/Pods-GitHubRepositories.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +111,7 @@
 		1F9158912A4102BC0025631A /* GitHubRepositories */ = {
 			isa = PBXGroup;
 			children = (
+				1F9159082A410CF20025631A /* Helpers */,
 				1F9158C12A4107890025631A /* Utils */,
 				1F9158BE2A41072C0025631A /* Localizable */,
 				1F9158B62A41066C0025631A /* Configs */,
@@ -221,6 +240,54 @@
 				1F9158CE2A4107D80025631A /* GeneralResourceTableViewCellRepresentable.swift */,
 			);
 			path = Representables;
+			sourceTree = "<group>";
+		};
+		1F9159082A410CF20025631A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1F9159092A410CF20025631A /* Repository */,
+				1F9159102A410CF20025631A /* NetworkingManager */,
+				1F9159142A410CF20025631A /* ConfigurationManager */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1F9159092A410CF20025631A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1F91590A2A410CF20025631A /* RemoteGitHubRepository.swift */,
+				1F91590B2A410CF20025631A /* GitHubRepositoryManager.swift */,
+				1F91590C2A410CF20025631A /* GitHubRepositoryRouter.swift */,
+				1F91590D2A410CF20025631A /* UserDefaultsGitHubRepository.swift */,
+				1F91590E2A410CF20025631A /* Protocols */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1F91590E2A410CF20025631A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1F91590F2A410CF20025631A /* Repository.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1F9159102A410CF20025631A /* NetworkingManager */ = {
+			isa = PBXGroup;
+			children = (
+				1F9159112A410CF20025631A /* NetworkingManager+Reachability.swift */,
+				1F9159122A410CF20025631A /* NetworkingManager.swift */,
+				1F9159132A410CF20025631A /* NetworkingManager+ModelResult.swift */,
+			);
+			path = NetworkingManager;
+			sourceTree = "<group>";
+		};
+		1F9159142A410CF20025631A /* ConfigurationManager */ = {
+			isa = PBXGroup;
+			children = (
+				1F9159152A410CF20025631A /* ConfigurationManager.swift */,
+			);
+			path = ConfigurationManager;
 			sourceTree = "<group>";
 		};
 		989ECEB9AB4D65F055F00C80 /* Pods */ = {
@@ -359,18 +426,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9158B02A4106170025631A /* GitHubRepositoryOwner.swift in Sources */,
+				1F91591D2A410CF20025631A /* NetworkingManager+ModelResult.swift in Sources */,
 				1F9158C52A4107970025631A /* DateUtils.swift in Sources */,
 				1F9158D12A4107D80025631A /* TableViewCellRepresentable.swift in Sources */,
 				1F9158D02A4107D80025631A /* LoadingTableViewCell.swift in Sources */,
 				1F9158C72A4107970025631A /* UserDefaultUtils.swift in Sources */,
 				1F9158C62A4107970025631A /* AlertViewUtils.swift in Sources */,
+				1F9159162A410CF20025631A /* RemoteGitHubRepository.swift in Sources */,
+				1F91591E2A410CF20025631A /* ConfigurationManager.swift in Sources */,
+				1F91591C2A410CF20025631A /* NetworkingManager.swift in Sources */,
+				1F91591A2A410CF20025631A /* Repository.swift in Sources */,
 				1F9158AF2A4106170025631A /* GitHubRepository.swift in Sources */,
 				1F9158D22A4107D80025631A /* GeneralResourceTableViewCellRepresentable.swift in Sources */,
 				1F9158B92A4106780025631A /* Configuration.swift in Sources */,
 				1F9158D42A4108080025631A /* GeneralResource.swift in Sources */,
 				1F9158B52A4106590025631A /* FilterTimeFrameType.swift in Sources */,
+				1F9159172A410CF20025631A /* GitHubRepositoryManager.swift in Sources */,
 				1F9158932A4102BC0025631A /* AppDelegate.swift in Sources */,
 				1F9158B12A4106170025631A /* GitHubRepositoryResponse.swift in Sources */,
+				1F9159182A410CF20025631A /* GitHubRepositoryRouter.swift in Sources */,
+				1F91591B2A410CF20025631A /* NetworkingManager+Reachability.swift in Sources */,
+				1F9159192A410CF20025631A /* UserDefaultsGitHubRepository.swift in Sources */,
 				1F9158952A4102BC0025631A /* SceneDelegate.swift in Sources */,
 				1F9158CF2A4107D80025631A /* EmptyTableViewCell.swift in Sources */,
 			);
