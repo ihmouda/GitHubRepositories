@@ -19,6 +19,7 @@
 		1F9158B92A4106780025631A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9158B72A4106780025631A /* Configuration.swift */; };
 		1F9158BA2A4106780025631A /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F9158B82A4106780025631A /* Configuration.plist */; };
 		1F9158BD2A4106A10025631A /* TeluguSangamMN.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 1F9158BC2A4106A10025631A /* TeluguSangamMN.ttc */; };
+		1F9158C02A4107390025631A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F9158BF2A4107390025631A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1F9158B72A4106780025631A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		1F9158B82A4106780025631A /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		1F9158BC2A4106A10025631A /* TeluguSangamMN.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = TeluguSangamMN.ttc; sourceTree = "<group>"; };
+		1F9158BF2A4107390025631A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		1F9158912A4102BC0025631A /* GitHubRepositories */ = {
 			isa = PBXGroup;
 			children = (
+				1F9158BE2A41072C0025631A /* Localizable */,
 				1F9158B62A41066C0025631A /* Configs */,
 				1F9158B32A4106510025631A /* Enum */,
 				1F9158A92A41060C0025631A /* Entities */,
@@ -149,6 +152,14 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		1F9158BE2A41072C0025631A /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				1F9158BF2A4107390025631A /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9158BD2A4106A10025631A /* TeluguSangamMN.ttc in Resources */,
+				1F9158C02A4107390025631A /* Localizable.strings in Resources */,
 				1F91589F2A4102BD0025631A /* LaunchScreen.storyboard in Resources */,
 				1F9158BA2A4106780025631A /* Configuration.plist in Resources */,
 				1F91589C2A4102BD0025631A /* Assets.xcassets in Resources */,

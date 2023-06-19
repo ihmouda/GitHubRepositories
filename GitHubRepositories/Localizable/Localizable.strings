@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  GitHubRepositories
+
+  Created by mihmouda on 15/06/2023.
+  
+*/
+
+"general.ok" = "Ok";
+"error.noInternetConnection" = "No Internet Connection";
+"error.failedToGetData" = "Failed to get data";
