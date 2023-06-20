@@ -117,12 +117,14 @@ The structure of our project is based on grouping by function, where we grouped 
 
 <img src="https://github.com/ihmouda/GitHubRepositories/raw/main/GitHubRepositories/Resources/Gifs/no-internet-2.gif" width="260"/>
 
-      p
+      
 ## Work Process:
 
 1. Analyze the assignment requirements and specify the required functional and non-functional requirements.
 2. Create a UI design using Sketch design tool for the required screens.
+[UI Designs](https://invis.io/RY139Z70Q9PH)
 3. Translate the requirements into a code design using “Miro” project management tool.
+[Code Design](https://miro.com/app/board/uXjVM9XCSyY=/?share_link_id=713123888963)
 4. Start the code development process.
 5. Test, review, optimize and document the code.
 6. Push the code to remote Github repository.
