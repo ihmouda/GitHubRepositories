@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1F2961082A41105300A441A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2961062A41105300A441A3 /* Main.storyboard */; };
+		1F2961112A41B49500A441A3 /* no-internet-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F29610F2A41B49500A441A3 /* no-internet-2.gif */; };
+		1F2961122A41B49500A441A3 /* no-internet-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F2961102A41B49500A441A3 /* no-internet-1.gif */; };
+		1F2961142A41B5D300A441A3 /* preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1F2961132A41B5D300A441A3 /* preview.gif */; };
+		1F2961162A41B6AA00A441A3 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2961152A41B6AA00A441A3 /* Readme.md */; };
 		1F9158932A4102BC0025631A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9158922A4102BC0025631A /* AppDelegate.swift */; };
 		1F9158952A4102BC0025631A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9158942A4102BC0025631A /* SceneDelegate.swift */; };
 		1F91589C2A4102BD0025631A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F91589B2A4102BD0025631A /* Assets.xcassets */; };
@@ -57,6 +61,10 @@
 
 /* Begin PBXFileReference section */
 		1F2961072A41105300A441A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F29610F2A41B49500A441A3 /* no-internet-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "no-internet-2.gif"; sourceTree = "<group>"; };
+		1F2961102A41B49500A441A3 /* no-internet-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "no-internet-1.gif"; sourceTree = "<group>"; };
+		1F2961132A41B5D300A441A3 /* preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = preview.gif; sourceTree = "<group>"; };
+		1F2961152A41B6AA00A441A3 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		1F91588F2A4102BC0025631A /* GitHubRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9158922A4102BC0025631A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F9158942A4102BC0025631A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,9 +128,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F29610A2A41B12B00A441A3 /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				1F2961132A41B5D300A441A3 /* preview.gif */,
+				1F2961102A41B49500A441A3 /* no-internet-1.gif */,
+				1F29610F2A41B49500A441A3 /* no-internet-2.gif */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
 		1F9158862A4102BC0025631A = {
 			isa = PBXGroup;
 			children = (
+				1F2961152A41B6AA00A441A3 /* Readme.md */,
 				1F9158912A4102BC0025631A /* GitHubRepositories */,
 				1F9158902A4102BC0025631A /* Products */,
 				989ECEB9AB4D65F055F00C80 /* Pods */,
@@ -176,6 +195,7 @@
 		1F9158A82A4103110025631A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1F29610A2A41B12B00A441A3 /* Gifs */,
 				1F9158BB2A4106960025631A /* fonts */,
 				1F91589B2A4102BD0025631A /* Assets.xcassets */,
 				1F91589D2A4102BD0025631A /* LaunchScreen.storyboard */,
@@ -500,11 +520,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2961162A41B6AA00A441A3 /* Readme.md in Resources */,
 				1F9158BD2A4106A10025631A /* TeluguSangamMN.ttc in Resources */,
+				1F2961112A41B49500A441A3 /* no-internet-2.gif in Resources */,
 				1F9158C02A4107390025631A /* Localizable.strings in Resources */,
 				1F91589F2A4102BD0025631A /* LaunchScreen.storyboard in Resources */,
 				1F2961082A41105300A441A3 /* Main.storyboard in Resources */,
+				1F2961142A41B5D300A441A3 /* preview.gif in Resources */,
 				1F9158BA2A4106780025631A /* Configuration.plist in Resources */,
+				1F2961122A41B49500A441A3 /* no-internet-1.gif in Resources */,
 				1F91589C2A4102BD0025631A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
