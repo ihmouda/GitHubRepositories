@@ -9,7 +9,7 @@
 
 ## Preview
 
-<img src="https://github.com/ihmouda/GitHubRepositories/raw/main/Resources/Gifs/preview.gif" width="260"/>
+<img src="https://github.com/ihmouda/GitHubRepositories/raw/main/GitHubRepositories/Resources/Gifs/preview.gif" width="260"/>
 
 
 ## Requirements
@@ -113,9 +113,9 @@ The structure of our project is based on grouping by function, where we grouped 
     - A “No Internet connection” UIAlertController will appear if the network is not reachable with existing data list.
     - When the network reachability status is updated and the connection is retrieved, the app will automatically hide the “No Internet connection” full screen or UIAlertController and request to get the data again.
       
-<img src="https://github.com/ihmouda/GitHubRepositories/raw/main/Resources/Gifs/no-internet-1.gif" width="260"/>
+<img src="https://github.com/ihmouda/GitHubRepositories/raw/main/GitHubRepositories/Resources/Gifs/no-internet-1.gif" width="260"/>
 
-<img src="https://github.com/ihmouda/GitHubRepositories/raw/main/Resources/Gifs/no-internet-2.gif" width="260"/>
+<img src="https://github.com/ihmouda/GitHubRepositories/raw/main/GitHubRepositories/Resources/Gifs/no-internet-2.gif" width="260"/>
 
       p
 ## Work Process:
